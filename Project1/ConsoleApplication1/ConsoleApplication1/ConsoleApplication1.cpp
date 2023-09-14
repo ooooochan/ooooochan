@@ -2,14 +2,25 @@
 
 int main(void)
 {
-	int val_1, val_2, a, b;
-
-	printf("a = 10,b=15일 때\n");
-
-	a = 10;
-	b = 15;
-	val_1 = ++a + b--;
-
-	printf("1.val_1 = a++ + b-- = %d, a = %d, b =%d\n", val_1, a, b);
-	return 0;
+	int input;
+	scanf_s("%d", &input);
+	if (input % 100 == 0) {
+		if (input % 4 == 0) {
+			printf("윤년입니다");
+		}
+		else if (input % 400 == 0) {
+			printf("윤년입니다");
+		}
+		else
+			printf("윤년이 아닙니다");
+	}
+	else
+		if (input % 4 == 0) {
+			printf("윤년입니다");
+		}
+		else if (input % 400 == 0) {
+			printf("윤년입니다");
+		}
+		else
+			printf("윤년이 아닙니다");
 }
